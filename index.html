@@ -1,85 +1,176 @@
 <!DOCTYPE>
 <html>
 <head>
-	<style>
-		html, body, div, span, applet, object, iframe,
-		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-		a, abbr, acronym, address, big, cite, code,
-		del, dfn, em, img, ins, kbd, q, s, samp,
-		small, strike, strong, sub, sup, tt, var,
-		b, u, i, center,
-		dl, dt, dd, ol, ul, li,
-		fieldset, form, label, legend,
-		table, caption, tbody, tfoot, thead, tr, th, td,
-		article, aside, canvas, details, embed, 
-		figure, figcaption, footer, header, hgroup, 
-		menu, nav, output, ruby, section, summary,
-		time, mark, audio, video {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			font-size: 100%;
-			font: inherit;
-			vertical-align: baseline;
-		}
-		/* HTML5 display-role reset for older browsers */
-		article, aside, details, figcaption, figure, 
-		footer, header, hgroup, menu, nav, section {
-			display: block;
-		}
-		body {
-			line-height: 1;
-		}
-		ol, ul {
-			list-style: none;
-		}
-		blockquote, q {
-			quotes: none;
-		}
-		blockquote:before, blockquote:after,
-		q:before, q:after {
-			content: '';
-			content: none;
-		}
-		table {
-			border-collapse: collapse;
-			border-spacing: 0;
-		}
-
-		.body {
-			width: 1366px;
-			margin: 0 auto;
-			box-sizing: border-box;
-		}
-
-		#header {
-			position: relative;
-			padding: 0 40px;
-		}
-
-		#logo {
-			width: 140px;
-			height: 112px;
-			background: url('logo.jpg') 0 0 no-repeat transparent;
-			position: absolute;
-			top: 0;
-			left: 40px;
-		}
-	</style>
+	<script type="text/javascript" src="//use.typekit.net/ozr5bjk.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//unslider.com/unslider.min.js"></script>
+	<script src="js/ChartJS/Chart.js"></script>
+	<script src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 </head>
 <body>
-	<div id='header' class='body'>
+	<div id='header' class='body bg_white'>
 		<div id='logo'></div>
 		<div id='menu'>
 			<ul>
-				<li><a href='#'>profil spolocnosti</a></li>
-				<li><a href='#'>vyroba</a></li>
-				<li><a href='#'>kooperacia</a></li>
-				<li><a href='#'>kariera</a></li>
-				<li><a href='#'>kontakt</a></li>
+				<li class="active"><a class="color_grey" href='#'>profil spolocnosti</a></li>
+				<li><a class="color_grey" href='#'>vyroba</a></li>
+				<li><a class="color_grey" href='#'>kooperacia</a></li>
+				<li><a class="color_grey" href='#'>kariera</a></li>
+				<li><a class="color_grey" href='#'>kontakt</a></li>
 			</ul>
 		</div>
 	</div>
-	<div id='slider'></div>
+
+	<div class="banner has-dots" style="overflow: hidden; width: 100%;">
+		<ul style="width: 100%; position: relative;">
+			<li style="background-image: url('img/img1.jpg'); width: 100%;">
+				<h1>Ttiulka pre prvy slide</h1>
+				<p>No fancy effects or unnecessary markup, and it’s less than 3kb.</p>
+				<a href="#download" class="btn">Download</a>
+			</li>
+			
+			<li style="background-image: url('img/img2.jpg'); width: 100%;">
+				<h1>Ttiulka pre druhy slide</h1>
+				<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
+				<a href="#download" class="btn">Download</a>
+			</li>
+			
+			<li style="background-image: url('img/img3.jpg'); width: 100%;">
+				<h1>Ttiulka pre treti slide</h1>
+				<p>Everything to do with Unslider is hosted on GitHub.</p>
+				<a href="//github.com/idiot/unslider" class="btn">Contribute</a>
+			</li>
+		</ul>
+	</div>
+
+
+
+	<div class="article">
+		<div class="content">
+			<h1>Profil společnosti</h1>
+			<p>Pellenc s.r.o. (ďalej PSRO) je dcérskou spoločnosťou francúzskej spoločnosti Pellenc SA Francúzsko, ktorá je dlhodobo svetovým lídrom v oblasti výroby strojov pre vinohradníctvo, vinárstvo a pestovanie olív. Hlavnými aktivitami skupiny Pellenc je  vývoj, konštrukcia a výroba strojov pre:</p>
+			<ul class="center">
+				<li>vinohradníctvo</li>
+				<li>pestovanie olív</li>
+				<li>vinárstva</li>
+				<li>sadovníctvo a údržbu zelených priestorov v mestách a iných rezortoch</li>
+				<li>linky na triedenie komunálneho odpadu</li>
+			</ul>
+		</div>
+	</div>
+	<div class="article bg_orange">
+		<div class="content">
+			<h1>Pellenc ve světě</h1>
+			<div class="column_2">
+				<p>Skupina Pellenc má filiálky na všetkých kontinentoch, primárne v krajinách, kde sa pestuje hrozno a olivy :</p>
+				<ul>
+					<li>Európa - Francúzsko, Španielsko, Portugalsko, Taliansko, Slovensko</li>
+					<li>Afrika - Maroko, Tunis, Grécko, Turecko</li>
+					<li>USA - Kalifornia</li>
+					<li>Austrália a Nový Zéland</li>  
+				</ul>   
+			</div>
+			<div class="column_2" id="map"></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+
+
+	<div class="article" id="about_us">
+		<div class="content">
+			<canvas id="chart_1a" width="600"></canvas>
+			<canvas id="chart_2a"></canvas>
+		</div>
+	</div>
+	<div class="article bg_grey_light" id="contacts">
+		<div class="content">
+			<table style="width:100%;">
+				<tr>
+					<th>Kontakty</th>
+					<th><img src="img/head_icon.png"></th>
+					<th><img src="img/letter_icon.png"></th>
+					<th><img src="img/phone_icon.png"></th>
+				</tr>
+				<tr>
+					<td>Sekretariát GR</td>
+					<td>Mária CINGÁLKOVÁ</td>
+					<td>cingalkova@pellenc.sk</td>
+					<td>00421 32 7406 211</td>
+				</tr>
+				<tr>
+					<td>Nákup</td>
+					<td>Peter HANZEL</td>
+					<td>hanzel@pellenc.sk</td>
+					<td>00421 32 7406 250</td>
+				</tr>
+				<tr>
+					<td>Kooperácie</td>
+					<td>Branislav ŠEVČÍK</td>
+					<td>branislav.sevcik@pellenc.sk</td>
+					<td>00421 32 7406 258</td>
+				</tr>
+				<tr>
+					<td>Personalistika</td>
+					<td>Katarína HALUŠKOVÁ</td>
+					<td>katarina.haluskova@pellenc.sk</td>
+					<td>00421 32 7406 213</td>
+				</tr>
+				<tr>
+					<td>Predaj</td>
+					<td>Zoltán SZOMBATH</td>
+					<td>szombath@pellenc.sk</td>
+					<td>00421 910 935 050</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--<div class="article" id="map">
+		<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=16&center=48.7472,17.8437&key=..." allowfullscreen></iframe> 
+	</div>-->
+	<div class="article" id="address">
+		<div class="content">
+			<h2>Adresa spoločnosti</h2>
+			<div>
+				<div class="column_3">
+					<p>Kočovská 18</p>
+					<p>91501 Nové Mesto nad Váhom</p>
+					<p>Slovenská Republika</p>
+				</div>
+				<div class="column_3">
+					<p>IČO: 36310212</p>
+					<p>DIČ: 36310212/643</p>
+					<p>Bankové spojenie: 0273306152/0900 SLSP</p>
+				</div>
+				<div class="column_3">
+					<p>Kontakt PELLENC SA</p>
+					<p>www.pellenc.com  |  pellenc.sa@pellenc.com</p>
+					<p>Tel.: 0033 (0)4 90 09 47 00</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="content">
+			<div id="logo"></div>
+			<div id='menu'>
+				<ul>
+					<li class="active"><a class="color_grey" href='#'>profil spolocnosti</a></li>
+					<li><a class="color_grey" href='#'>vyroba</a></li>
+					<li><a class="color_grey" href='#'>kooperacia</a></li>
+					<li><a class="color_grey" href='#'>kariera</a></li>
+					<li><a class="color_grey" href='#'>kontakt</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="credit">
+
+	</div>
 </body>
 </html>
