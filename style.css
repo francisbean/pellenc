@@ -113,11 +113,10 @@ body {
 	font-size: 12pt;
 }
 
-.body {
-	width: 1366px;
-	margin: 0 auto;
-	box-sizing: border-box;
+.bg_black {
+	background-color: black;
 }
+
 .bg_grey {
 	background-color: #636363;
 }
@@ -162,6 +161,14 @@ body {
 	width: 33.3%;
 }
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 #header {
 	position: relative;
 	padding: 0 40px;
@@ -176,26 +183,28 @@ body {
 	position: absolute;
 	top: 0;
 	left: 40px;
+	z-index: 1000;
 }
 
-#header #menu {
+#header .menu,
+#footer .menu {
 	float: right;
-	margin-right: 20px;
 }
 
-#header #menu li {
+#header .menu li {
 	padding: 0 0 5px 0;
-	margin: 34px 30px 0 30px;;
+	margin: 34px 0 0 60px;;
 	float: left;
 }
 
-#header #menu li a {
+#header .menu li a,
+#footer .menu li a {
 	text-decoration: none;
 	font-size: 87%;
 }
 
-#header #menu li:hover,
-#header #menu li.active {
+#header .menu li:hover,
+#header .menu li.active {
 	border-width: 0 0 3px;
 	border-color: #F68F36;
 	border-style: solid;
@@ -280,8 +289,10 @@ body {
 }
 
 #header,
-.article .content {
-	max-width: 1367px;
+.article .content,
+#footer .content,
+#credit .content {
+	max-width: 1212;
 	margin: 0 auto;
 }
 
@@ -343,41 +354,54 @@ body {
 	width: 100%;
 }
 
-#footer .content {
-	max-width: 1367px;
-}
-
 #footer #logo {
 	background: url('img/logo_grey.png') 0 0 no-repeat;
 	width: 162px;
 	height: 45px;
 	float: left;
-	margin: 45px 40px 35px 100px;
+	margin: 45px 40px 35px 0px;
 }
 
-#footer #menu {
-	float: right;
-}
-
-#footer #menu li {
+#footer .menu li {
 	padding: 0 0 5px 0;
-	margin: 58px 30px 0 30px;;
+	margin: 58px 0 0 60px;;
 	float: left;
 }
 
-#footer #menu li a {
-	text-decoration: none;
-	font-size: 87%;
-}
-
-#footer #menu li:hover,
-#footer #menu li.active {
+#footer .menu li:hover,
+#footer .menu li.active {
 	/*border-width: 0 0 3px;
 	border-color: #F68F36;
 	border-style: solid;*/
 }
 
+#footer .menu li:hover > a,
+#footer .menu li.active > a {
+	color: #000;
+}
+
 #credit {
 	margin: 0 auto;
 	width: 100%;
+	height: 40px;
 }
+
+#credit p {
+	margin: 0;
+	color: #fff;
+	font-size: 87%;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+#credit a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#credit a:hover,
+#credit a:focus {
+	color: #F68F36;
+}
+
+
