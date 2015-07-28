@@ -84,22 +84,6 @@ table {
 	border-spacing: 0;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1.2;
-  text-align: center;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1.2;
-  text-align: left;
-}
-
 p {
   font-size: 100%;
   color: black;
@@ -172,7 +156,7 @@ body {
 #header {
 	position: relative;
 	padding: 0 40px;
-	height: 74px;
+	height: 70px;
 	width: 100%;
 }
 
@@ -193,7 +177,7 @@ body {
 
 #header .menu li {
 	padding: 0 0 5px 0;
-	margin: 34px 0 0 60px;;
+	margin: 30px 0 0 63px;;
 	float: left;
 }
 
@@ -274,9 +258,25 @@ body {
     opacity: 1;
 }
 
-.article {
-	padding-top: 20px;
-	padding-bottom: 20px;
+.content {
+	padding: 60px 0 55px;
+}
+
+.article h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: left;
 }
 
 .article li {
@@ -286,6 +286,20 @@ body {
 .article ul.center {
 	text-align: center;
 	font-size: 110%;
+}
+
+.article ul.center li {
+	text-transform: uppercase;
+	line-height: 2.2em;
+}
+
+.article ul.left {
+	padding-left: 1em;
+}
+
+.article ul.left li {
+	padding-left: 1em;
+	line-height: 1.9em;
 }
 
 #header,
@@ -300,8 +314,19 @@ body {
 	padding: 0 auto;
 }
 
+#address h2 {
+	margin-top:24px;
+}
+#address .column_3 p {
+	margin: 11px 0;
+}
+
 #contacts {
 	padding: 30px 0 20px;
+}
+
+#contacts .content {
+	padding: 10px 0 5px;
 }
 
 #contacts th {
@@ -342,16 +367,21 @@ body {
 	text-align: right;
 }
 
-#map {
-	background: url('img/map.png') 0 0 no-repeat;
-	width: 523px;
-	height: 316px;
+#bg_map {
+	background: url('img/map.png') no-repeat;
+	background-position: right 35px;
+	min-height: 256px;
 }
 
 #footer {
 	background: #aaa;
 	margin: 0 auto;
 	width: 100%;
+}
+
+#credit .content,
+#footer .content {
+	padding: 0;
 }
 
 #footer #logo {
@@ -364,7 +394,7 @@ body {
 
 #footer .menu li {
 	padding: 0 0 5px 0;
-	margin: 58px 0 0 60px;;
+	margin: 58px 0 0 63px;;
 	float: left;
 }
 
