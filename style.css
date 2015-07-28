@@ -1,3 +1,45 @@
+@font-face {
+    font-family: 'FiraSans';
+    src: url('fonts/fira-sans/FiraSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('fonts/fira-sans/FiraSans-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('fonts/fira-sans/FiraSans-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: "DejaVu Sans";
+    src: url("fonts/DejaVuSans.ttf");
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url("fonts/DejaVuSans-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url("fonts/DejaVuSans-Oblique.ttf");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url("fonts/DejaVuSans-BoldOblique.ttf");
+    font-weight: bold;
+    font-style: italic, oblique;
+}*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,7 +86,6 @@ table {
 
 h1 {
   font-size: 48px;
-  font-family: "Fira Sans";
   font-weight: bold;
   font-style: italic;
   line-height: 1.2;
@@ -53,7 +94,6 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-family: "Fira Sans";
   font-weight: bold;
   font-style: italic;
   line-height: 1.2;
@@ -69,7 +109,7 @@ p {
 }
 
 body {
-	font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+	font-family: 'FiraSans', Arial, Helvetica, sans-serif;
 	font-size: 12pt;
 }
 
