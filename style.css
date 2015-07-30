@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'FiraSans';
+    src: url('fonts/fira-sans/FiraSans-LightItalic.otf');
+    font-weight: light;
+    font-style: italic;
+}
+
 /*@font-face {
     font-family: "DejaVu Sans";
     src: url("fonts/DejaVuSans.ttf");
@@ -262,13 +269,17 @@ body {
 	padding: 60px 0 55px;
 }
 
-.article h1 {
+.article.first .content {
+	padding-top: 0px;
+}
+
+h1.page_title {
   font-size: 48px;
   font-weight: bold;
   font-style: italic;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 70px 10px 66px;
 }
 
 .article h2 {
@@ -276,21 +287,29 @@ body {
   font-weight: bold;
   font-style: italic;
   line-height: 1.2;
-  text-align: left;
 }
 
 .article li {
 	list-style: initial;
 }
 
-.article ul.center {
+.article.center h2,
+.article.center h3 ,
+.article.center p{
+	text-align: center;
+}
+
+.article.center ul{
 	text-align: center;
 	font-size: 110%;
 }
 
-.article ul.center li {
-	text-transform: uppercase;
+.article.center ul li {
 	line-height: 2.2em;
+}
+
+.article.upper ul li {
+	text-transform: uppercase;
 }
 
 .article ul.left {
@@ -303,10 +322,15 @@ body {
 }
 
 #header,
-.article .content,
 #footer .content,
 #credit .content {
-	max-width: 1212;
+	max-width: 1212px;
+	margin: 0 auto;
+}
+
+.article .content {
+	max-width: 1168;
+	padding-right:44px;
 	margin: 0 auto;
 }
 
@@ -326,7 +350,7 @@ body {
 }
 
 #contacts .content {
-	padding: 10px 0 5px;
+	padding: 10px 44px 5px 0;
 }
 
 #contacts th {
@@ -335,12 +359,55 @@ body {
   font-weight: bold;
   font-style: italic;
   line-height: 2;
-  text-align: center;
-  vertical-align: top;
+  text-align: left;
+  vertical-align: middle;
+  width: 25%;
+  padding-left: 50px;
 }
 
 #contacts th:first-child {
 	text-align: left;
+	padding: 0;
+}
+
+#contacts tr th:nth-child(1){
+    width: 25%;
+}
+
+#contacts tr th:nth-child(2){
+    width: 32%;
+}
+
+#contacts tr th:nth-child(3){
+    width: 20%;
+}
+
+#contacts tr th:nth-child(4){
+    width: 25%;
+}
+
+#contacts tr:nth-child(2) td {
+    padding-top: 20px;
+}
+
+#contacts tr td:nth-child(1){
+    width: 25%;
+}
+#contacts tr td:nth-child(2){
+    width: 32%;
+}
+
+#contacts tr td:nth-child(3){
+    width: 20%;
+}
+#contacts tr td:nth-child(4){
+    width: 25%;
+}
+
+#contacts th:last-child {
+	text-align: right;
+	padding-left: 0px;
+	padding-right: 50px;
 }
 
 #contacts td {
@@ -353,6 +420,7 @@ body {
 	color: black;
   	line-height: 3;
   	text-align: left;
+  	width: 25%;
 } 
 
 #contacts tr:last-child td {
@@ -432,6 +500,19 @@ body {
 #credit a:hover,
 #credit a:focus {
 	color: #F68F36;
+}
+
+/* CARRIER */
+#HR_free_positions h2 {
+	margin: 60px 10px 0;
+}
+
+
+#HR_free_positions h3 {
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: 300;
+	margin: 60px 10px 30px;
 }
 
 
