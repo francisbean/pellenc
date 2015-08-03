@@ -35,15 +35,15 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 4000,
 	});
-
+	
 	$('.carousel.multiple').slick({
 		infinite: true,
 		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 4000,
-		centerMode: true,
-  		centerPadding: '60px',
+		//centerMode: true,
+  		//centerPadding: '60px',
         speed: 500,
         responsive: [{
             breakpoint: 768,
@@ -51,7 +51,7 @@ $(document).ready(function(){
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }, {
             breakpoint: 480,
