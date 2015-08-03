@@ -688,8 +688,16 @@ h1.page_title {
 	top: -15px;
 }
 .bottom_contacts.col_4 .arrow {
-	
 	top: -45px;
+}
+
+.product_item {
+	text-align: center;
+}
+
+.product_item h2{
+	font-size: 30px;
+	font-weight: bold;
 }
 
 
