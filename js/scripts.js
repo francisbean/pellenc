@@ -15,13 +15,53 @@ var barChartData = {
 	window.myBar = new Chart(ctx).Bar(barChartData, {
 		responsive : true
 	});
-}*/
+}
 
 $(function() {
     $('.banner').unslider({
 		fluid: true,
 		dots: true,
 		speed: 500
+	});
+});*/
+
+$(document).ready(function(){
+	$('.carousel.fullscreen').slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+	});
+
+	$('.carousel.multiple').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		centerMode: true,
+  		centerPadding: '60px',
+        speed: 500,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }]
 	});
 });
 
