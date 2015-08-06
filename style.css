@@ -284,6 +284,7 @@ body {
 .carousel {
 	margin: 20px auto;
 	overflow: hidden;
+	position: relative;
 }
 
 .carousel.multiple {
@@ -814,9 +815,17 @@ h1.page_title {
 	text-align: center;
 }
 
+.product_item .content {
+	padding-bottom: 20px;
+}
+
 .product_item h2{
 	font-size: 30px;
 	font-weight: bold;
+	margin-bottom: 15px;
 }
 
+.product_item li {
+	line-height: 1.4em;
+}
 
