@@ -179,8 +179,40 @@ body {
 		height: 40px;
 	}
 
-     #header .menu ul {
+     #header .menu ul.hidden {
      	display: none;
+     	position: relative;
+     }
+
+     #header .menu ul.shown {
+     	display: block;
+     	position: absolute;
+     	top: 0;
+     	left: 0;
+     	z-index: 1000;
+     	width: 100%;
+     }
+
+     #header .menu ul li {
+     	display: block;
+	    margin: 0;
+	    padding: 0;
+	    text-align: center;
+	    width: 100%;
+     }
+
+     #header .menu li a {
+     	background: #F68F36 none repeat scroll 0 0;
+	    border-bottom: 1px solid white;
+	    color: white;
+	    float: left;
+	    font-size: 125%;
+	    font-weight: 400;
+	    letter-spacing: 2px;
+	    padding: 0.5em 1em;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    width: 100%;
      }
 
      #header .menu #menu_toggler {
