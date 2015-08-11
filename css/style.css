@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'FiraSans';
-    src: url('fonts/fira-sans/FiraSans-Regular.otf');
+    src: url('../fonts/fira-sans/FiraSans-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FiraSans';
-    src: url('fonts/fira-sans/FiraSans-BoldItalic.otf');
+    src: url('../fonts/fira-sans/FiraSans-BoldItalic.otf');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'FiraSans';
-    src: url('fonts/fira-sans/FiraSans-Bold.otf');
+    src: url('../fonts/fira-sans/FiraSans-Bold.otf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FiraSans';
-    src: url('fonts/fira-sans/FiraSans-LightItalic.otf');
+    src: url('../fonts/fira-sans/FiraSans-LightItalic.otf');
     font-weight: light;
     font-style: italic;
 }
@@ -31,32 +31,14 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/slick/slick.eot');
-    src: url('fonts/slick/slick.eot?#iefix') format('embedded-opentype'), url('fonts/slick/slick.woff') format('woff'), url('fonts/slick/slick.ttf') format('truetype'), url('fonts/slick/slick.svg#slick') format('svg');
+    src: url('../fonts/slick/slick.eot');
+    src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/slick/slick.woff') format('woff'), 
+    url('../fonts/slick/slick.ttf') format('truetype'),
+    url('../fonts/slick/slick.svg#slick') format('svg');
 }
 
 
-
-/*@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans.ttf");
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Bold.ttf");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-Oblique.ttf");
-    font-style: italic, oblique;
-}
-@font-face {
-    font-family: "DejaVu Sans";
-    src: url("fonts/DejaVuSans-BoldOblique.ttf");
-    font-weight: bold;
-    font-style: italic, oblique;
-}*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -179,22 +161,46 @@ body {
 	position: relative;
 	padding: 0 40px;
 	height: 70px;
-	width: 100%;
 }
 
 #header #logo {
 	width: 140px;
 	height: 112px;
-	background: url('img/logo.jpg') 0 0 no-repeat transparent;
+	background: url('../img/logo.jpg') 0 0 no-repeat transparent;
 	position: absolute;
 	top: 0;
 	left: 40px;
 	z-index: 1000;
 }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 860px) {
+	#header {
+		height: 40px;
+	}
+
+     #header .menu ul {
+     	display: none;
+     }
+
+     #header .menu #menu_toggler {
+     	background: transparent url("../img/menu_toggler.png") no-repeat scroll right top;
+	    display: block;
+	    height: 1.2em;
+	    padding-right: 22px;
+	    width: 50px;
+	    margin: 17px 14px 10px;
+     }
+
+}
+
 #header .menu,
 #footer .menu {
 	float: right;
+}
+
+#header #menu_toggler {
+	display: none;
 }
 
 #header .menu li {
@@ -215,71 +221,6 @@ body {
 	border-color: #F68F36;
 	border-style: solid;
 }
-
-/*.banner { 
-	position: relative; 
-	overflow: auto; 
-}
-.banner li { 
-	list-style: none; 
-}
-
-.banner ul li {
-    display: block;
-    float: left;
-    min-height: 350px;
-    padding: 160px 0 110px;
-    width: 33%;
-}
-
-.banner h1, .banner h2 {
-    color: #fff;
-    font-size: 40px;
-    line-height: 52px;
-}
-
-.banner .btn, .banner .dot {
-    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-}
-
-.banner .btn {
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    clear: both;
-    color: #fff;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 25px 0 0;
-    padding: 9px 22px 7px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.banner .dots {
-    bottom: 20px;
-    left: 0;
-    position: absolute;
-    right: 0;
-}
-
-.banner .dots li {
-    border: 2px solid #fff;
-    border-radius: 6px;
-    cursor: pointer;
-    display: inline-block;
-    height: 10px;
-    margin: 0 4px;
-    opacity: 0.4;
-    text-indent: -999em;
-    transition: background 0.5s ease 0s, opacity 0.5s ease 0s;
-    width: 10px;
-}
-.banner .dots li.active {
-    background: #fff none repeat scroll 0 0;
-    opacity: 1;
-}
-*/
 
 .carousel {
 	margin: 20px auto;
@@ -351,7 +292,7 @@ body {
 	font-style: normal;
 	text-decoration: none;
 	padding: 10px 13px 10px 28px;
-	background: url('img/carousel_btn.jpg') repeat-x 0 0;
+	background: url('../img/carousel_btn.jpg') repeat-x 0 0;
 }
 
 .carousel.fullscreen .slick-dots {
@@ -383,7 +324,7 @@ body {
     color: transparent;
     border: 0;
     outline: none;
-    background-image: url('img/dot.png');
+    background-image: url('../img/dot.png');
     background-color: transparent;
     background-position: 0px 0px;
 }
@@ -419,7 +360,7 @@ body {
 
 .carousel button.slick-arrow:hover,
 .carousel button.slick-arrow:focus {
-	background-image: url('img/carousel_btn.jpg');
+	background-image: url('../img/carousel_btn.jpg');
 	background-repeat: repeat-x; 
 }
 
@@ -445,6 +386,13 @@ body {
 }
 .carousel button.slick-next::before {
 	content: '>';
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 860px) {
+     .carousel {
+     	margin: 10px auto;
+     }
 }
 
 .content {
@@ -641,7 +589,7 @@ h1.page_title {
 }
 
 #bg_map {
-	background: url('img/map.png') no-repeat;
+	background: url('../img/map.png') no-repeat;
 	background-position: right 35px;
 	min-height: 256px;
 }
@@ -658,7 +606,7 @@ h1.page_title {
 }
 
 #footer #logo {
-	background: url('img/logo_grey.png') 0 0 no-repeat;
+	background: url('../img/logo_grey.png') 0 0 no-repeat;
 	width: 162px;
 	height: 45px;
 	float: left;
@@ -798,7 +746,7 @@ h1.page_title {
 .bottom_contacts.col_3 .arrow,
 .bottom_contacts.col_4 .arrow {
 	margin: 0 auto;
-	background: url('img/triangle.png') 0 0 no-repeat;
+	background: url('../img/triangle.png') 0 0 no-repeat;
 	width: 89px;
 	height: 45px;
 	position: relative;
