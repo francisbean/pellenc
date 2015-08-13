@@ -1,0 +1,151 @@
+#contacts {
+	padding: 30px 0 20px;
+}
+
+#contacts .content {
+	padding: 10px 55px 5px 100px;
+}
+
+#contacts .head {
+	margin-bottom: 30px;
+}
+
+#contacts .head p{
+	font-size: 22pt;
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	width: 25%;
+}
+
+#contacts .head img {
+	position: relative;
+	left: 20%;
+}
+
+#contacts p {
+	margin: 0;
+	padding: 0;
+	float: left;
+	box-sizing: border-box;
+}
+
+#contacts .head p:first-child {
+	text-align: left;
+	padding: 0;
+}
+
+#contacts .head p {
+    width: 25%;
+}
+
+#contacts .head p:nth-child(4){
+    text-align: center;
+}
+
+#contacts .body p {
+    width: 25%;
+}
+#contacts .body p:nth-child(4){
+    text-align: right;
+}
+
+#contacts .head p:last-child {
+	text-align: right;
+	padding-left: 0px;
+	padding-right: 50px;
+}
+
+#contacts .body p {
+	height: 50px;
+	border-width: 0 0 1px 0;
+	border-color: #cecece;
+	border-style: solid;
+	vertical-align: middle;
+	font-size: 16px;
+	color: black;
+  	line-height: 3;
+  	text-align: left;
+  	width: 25%;
+} 
+
+#contacts .body:last-child p {
+	border-bottom: 0px;
+}
+
+#contacts .body p:first-child {
+	font-weight: bold;
+}
+
+#contacts .body p:last-child {
+	text-align: right;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 1110px) {
+
+	#contacts .head p {
+		font-size: 15pt;
+	}
+
+	#contacts .body p {
+		font-size: 9pt;
+		height: auto;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 780px) {
+	#contacts {
+	    padding: 48px 10px 0px;
+	}
+
+	#contacts .content {
+		padding: 0;
+	}
+
+	#contacts .head {
+		margin-bottom: 0px;
+	}
+
+	#contacts .head p {
+		display: none;
+		font-size: 15pt;
+	}
+
+	#contacts .head p:first-child {
+		display: block; 
+		text-align: center;
+	}
+
+	#contacts .head p,
+	#contacts .body p {
+		float: none;
+		border: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	#contacts .body {
+		border-color: #cecece;
+	    border-style: solid;
+	    border-width: 0 0 1px;
+	    width: 100%;
+	    padding: 35px 0;
+	}
+
+	#contacts .body:last-child {
+		border: none;
+	}
+
+	#contacts .body p {
+		font-size: 9pt;
+		height: auto;
+		line-height: 2em;
+	}
+
+	#contacts .body p:nth-child(4){
+	    text-align: center;
+	}
+}

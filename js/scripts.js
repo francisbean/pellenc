@@ -63,5 +63,18 @@ $(document).ready(function(){
             }
         }]
 	});
+
+	$( "#menu_toggler" ).click(function() {
+		var menu = $("#header .menu");
+		if(menu.hasClass("shown")) {
+			menu.removeClass("shown");
+			menu.addClass("hidden");
+			menu.slideUp();
+		} else {
+			menu.removeClass("hidden");
+			menu.addClass("shown");
+			menu.slideDown();
+		}
+	});
 });
 

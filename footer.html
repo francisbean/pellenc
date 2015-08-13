@@ -12,43 +12,35 @@
 	<link rel="stylesheet" type="text/css" href="css/fontface.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/colors.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/header.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" media="all" />
 
 
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 	<meta content="width=device-width" name="viewport">
 </head>
 <body>
-	<div id='header' class='bg_white'>
-		<div class='menu'>
-			<ul>
-				<li class="active"><a class="color_grey" href='index.html'>profil spolocnosti</a></li>
-				<li><a class="color_grey" href='production.html'>vyroba</a></li>
-				<li><a class="color_grey" href='cooperation.html'>kooperacia</a></li>
-				<li><a class="color_grey" href='carrier.html'>kariera</a></li>
-				<li><a class="color_grey" href='contact.html'>kontakt</a></li>
-			</ul>
+	<div id="footer">
+		<div class="content">
+			<div id="logo"></div>
+			<div id='menu'>
+				<ul>
+					<li class="active"><a class="color_grey" href='index.html'>profil spolocnosti</a></li>
+					<li><a class="color_grey" href='production.html'>vyroba</a></li>
+					<li><a class="color_grey" href='cooperation.html'>kooperacia</a></li>
+					<li><a class="color_grey" href='carrier.html'>kariera</a></li>
+					<li><a class="color_grey" href='contact.html'>kontakt</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
 		</div>
-		<div id="logo_wrap">
-			<div id='logo'></div>
-			<div id="menu_toggler">menu</div>
+	</div>
+	<div id="credit" class="bg_black">
+		<div class="content">
+			<p class="left">Copyright 2015 Pellenc.sk All Rights Reserved</p>
+			<p class="right">Design by <a href="http://youngprimitive.cz">youngprimitive.cz</a> | Code by <a href="kiristinakralikova.cz">Kika</a></p>
 		</div>
 	</div>
 
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
-	<script>
-		$( "#menu_toggler" ).click(function() {
-			var menu = $("#menu");
-			if(menu.hasClass("shown")) {
-				menu.removeClass("shown");
-				menu.addClass("hidden");
-				menu.slideUp();
-			} else {
-				menu.removeClass("hidden");
-				menu.addClass("shown");
-				menu.slideDown();
-			}
-		});
-	</script>
 </body>
 </html>

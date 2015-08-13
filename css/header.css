@@ -2,7 +2,7 @@
 	position: relative;
 	max-width: 1212px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 55px 0 100px;
 	height: 70px;
 }
 
@@ -12,58 +12,70 @@
 	background: url('../img/logo.jpg') 0 0 no-repeat transparent;
 	position: absolute;
 	top: 0;
-	left: 40px;
+	left: 100px;
 	z-index: 1000;
 }
 
-#header #menu,
-#footer #menu {
+#header .menu{
 	float: right;
 }
 
-#header #menu_toggler {
+#header .menu_toggler {
 	display: none;
 }
 
-#header #menu li {
+#header .menu li {
 	padding: 0 0 5px 0;
 	margin: 30px 0 0 63px;;
 	float: left;
 }
 
-#header #menu li a,
-#footer #menu li a {
+#header .menu li a,
+#header .menu li a.active,
+#header .menu li a:hover,
+#header .menu li a:focus,
+#header .menu li a:visited {
+	color: #636363;
+}
+
+#header .menu li a {
 	text-decoration: none;
 	font-size: 87%;
 }
 
-#header #menu li:hover {
+#header .menu li:hover {
 	cursor: pointer;
 }
 
-#header #menu li:hover,
-#header #menu li.active {
+#header .menu li:hover,
+#header .menu li.active {
 	border-width: 0 0 3px;
 	border-color: #F68F36;
 	border-style: solid;
 }
 
+@media all and (min-width: 861px) {
+	#header .menu {
+		display: block !important;
+	}
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media all and (max-width: 860px) {
 	#header {
-		height: 40px;
+		height: auto;
 		width: 100%;
 		margin: 0;
 		padding: 0;
 		position: relative;
 	}
 
-	#header #menu {
+	#header .menu {
 		float: none;
 		display: none;
 	}
 
-     #header #menu ul li {
+     #header .menu ul li {
      	display: block;
 	    margin: 0;
 	    padding: 0;
@@ -72,12 +84,12 @@
 	    float: none;
      }
 
-    #header #menu li:hover,
-	#header #menu li.active {
+    #header .menu li:hover,
+	#header .menu li.active {
 		border-width: 0;
 	}
 
-     #header #menu li a {
+     #header .menu li a {
      	background: #F68F36 none repeat scroll 0 0;
 	    border-bottom: 1px solid white;
 	    color: white;
