@@ -1,0 +1,59 @@
+.bg_black {
+	background-color: black;
+}
+
+.bg_grey {
+	background-color: #636363;
+}
+.bg_grey_light {
+	background-color: #e5e5e5;
+}
+
+.bg_white {
+	background-color: white;
+}
+
+.bg_orange {
+	background-color: #F68F36;
+}
+
+.color_black,
+.color_black a {
+	color: black;
+}
+.color_grey,
+.color_grey a {
+	color: #636363;
+}
+
+.color_white,
+.color_white a {
+	color: white;	
+}
+
+.color_orange,
+.color_orange a {
+	color: #F68F36;
+}
+
+.clear {
+	clear: both;
+}
+
+.column_2 {
+	float: left;
+	width: 50%;
+}
+
+.column_3 {
+	float: left;
+	width: 33.3%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
