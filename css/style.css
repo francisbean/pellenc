@@ -1,101 +1,5 @@
-@font-face {
-    font-family: 'FiraSans';
-    src: url('../fonts/fira-sans/FiraSans-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FiraSans';
-    src: url('../fonts/fira-sans/FiraSans-BoldItalic.otf');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'FiraSans';
-    src: url('../fonts/fira-sans/FiraSans-Bold.otf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FiraSans';
-    src: url('../fonts/fira-sans/FiraSans-LightItalic.otf');
-    font-weight: light;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('../fonts/slick/slick.eot');
-    src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), 
-    url('../fonts/slick/slick.woff') format('woff'), 
-    url('../fonts/slick/slick.ttf') format('truetype'),
-    url('../fonts/slick/slick.svg#slick') format('svg');
-}
 
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-p {
-  font-size: 100%;
-  color: black;
-  line-height: 1.2;
-  text-align: left;
-  margin: 20px 0;
-}
-
-body {
-	font-family: 'FiraSans', Arial, Helvetica, sans-serif;
-	font-size: 12pt;
-}
 
 .bg_black {
 	background-color: black;
@@ -157,102 +61,7 @@ body {
 	float: right;
 }
 
-#header {
-	position: relative;
-	padding: 0 40px;
-	height: 70px;
-}
 
-#header #logo {
-	width: 140px;
-	height: 112px;
-	background: url('../img/logo.jpg') 0 0 no-repeat transparent;
-	position: absolute;
-	top: 0;
-	left: 40px;
-	z-index: 1000;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media all and (max-width: 860px) {
-	#header {
-		height: 40px;
-	}
-
-     #header .menu ul.hidden {
-     	display: none;
-     	position: relative;
-     }
-
-     #header .menu ul.shown {
-     	display: block;
-     	position: absolute;
-     	top: 0;
-     	left: 0;
-     	z-index: 1000;
-     	width: 100%;
-     }
-
-     #header .menu ul li {
-     	display: block;
-	    margin: 0;
-	    padding: 0;
-	    text-align: center;
-	    width: 100%;
-     }
-
-     #header .menu li a {
-     	background: #F68F36 none repeat scroll 0 0;
-	    border-bottom: 1px solid white;
-	    color: white;
-	    float: left;
-	    font-size: 125%;
-	    font-weight: 400;
-	    letter-spacing: 2px;
-	    padding: 0.5em 1em;
-	    text-decoration: none;
-	    text-transform: uppercase;
-	    width: 100%;
-     }
-
-     #header .menu #menu_toggler {
-     	background: transparent url("../img/menu_toggler.png") no-repeat scroll right top;
-	    display: block;
-	    height: 1.2em;
-	    padding-right: 22px;
-	    width: 50px;
-	    margin: 17px 14px 10px;
-     }
-
-}
-
-#header .menu,
-#footer .menu {
-	float: right;
-}
-
-#header #menu_toggler {
-	display: none;
-}
-
-#header .menu li {
-	padding: 0 0 5px 0;
-	margin: 30px 0 0 63px;;
-	float: left;
-}
-
-#header .menu li a,
-#footer .menu li a {
-	text-decoration: none;
-	font-size: 87%;
-}
-
-#header .menu li:hover,
-#header .menu li.active {
-	border-width: 0 0 3px;
-	border-color: #F68F36;
-	border-style: solid;
-}
 
 .carousel {
 	margin: 20px auto;
@@ -422,9 +231,9 @@ body {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media all and (max-width: 860px) {
-     .carousel {
-     	margin: 10px auto;
-     }
+	 .carousel {
+	 	margin: 10px auto;
+	 }
 }
 
 .content {
@@ -506,7 +315,6 @@ h1.page_title {
 	line-height: 1.9em;
 }
 
-#header,
 #footer .content,
 #credit .content {
 	max-width: 1212px;

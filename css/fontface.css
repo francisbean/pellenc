@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/fira-sans/FiraSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/fira-sans/FiraSans-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/fira-sans/FiraSans-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/fira-sans/FiraSans-LightItalic.otf');
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick/slick.eot');
+    src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/slick/slick.woff') format('woff'), 
+    url('../fonts/slick/slick.ttf') format('truetype'),
+    url('../fonts/slick/slick.svg#slick') format('svg');
+}
