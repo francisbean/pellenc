@@ -46,21 +46,22 @@ $(document).ready(function(){
   		//centerPadding: '60px',
         speed: 500,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 1136,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 2
+                arrows: true,
+                autoplay: false,
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         }, {
-            breakpoint: 480,
+            breakpoint: 700,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
+        }, {
+            breakpoint: 500,
+            settings: 'unslick'
         }]
 	});
 

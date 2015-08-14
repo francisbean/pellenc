@@ -1,1 +1,36 @@
-small_carousel.css
+.carousel.multiple {
+	width: 1366px; 
+	height: 200px;
+}
+
+.carousel.multiple .slick-list {
+	max-width: 1162px;
+	margin: 0 103px;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.carousel.multiple button.slick-arrow {
+	top: 43%;
+}
+
+.carousel.multiple img {
+	width: 100%;
+	height: auto;
+}
+
+@media all and (min-width: 1367px) {
+	.carousel.multiple .slick-list {
+		padding: 0 !important;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 1366px) {
+	.carousel.multiple {
+		width: 100%;
+	}
+
+	.carousel.multiple .slick-list {
+		max-width: 80%;
+	}
+}

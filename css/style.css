@@ -4,113 +4,6 @@
 	position: relative;
 }
 
-.carousel.multiple {
-	width: 1366px; 
-	height: 200px;
-}
-
-.carousel.multiple .slick-list {
-	max-width: 1162px;
-	margin: 0 0 0 103px;
-	padding: 0 !important;
-	transform: translate3d(0px, 0px, 0px);
-}
-
-.carousel.multiple img {
-	width: 100%;
-	height: auto;
-}
-
-.carousel.fullscreen {
-	height: 473px;
-	position: relative;
-	background-color: grey;
-}
-
-.carousel.fullscreen .slick-slide {
-    float: left;
-    height: 473px;
-    width: 100%;
-    min-height: 1px;
-    background-size: 100%;
-}
-
-.carousel.fullscreen .slick-list {
-	height: 473px;
-}
-
-.carousel.fullscreen .content {
-	margin: 0 auto;
-    max-width: 1012px;
-    padding: 218px 200px 0 0;
-    color: #fff;
-}
-
-.carousel.fullscreen .content * {
-	color: #fff;
-}
-
-.carousel.fullscreen .content h1 {
-	font-size: 180%;
-	font-style: italic;
-	font-weight: bold;
-}
-
-
-.carousel.fullscreen .content p {
-	font-size: 87%;
-	margin: 18px 0 35px;
-}
-
-.carousel.fullscreen .content a.btn {
-	font-size: 80%;
-	font-weight: normal;
-	font-style: normal;
-	text-decoration: none;
-	padding: 10px 13px 10px 28px;
-	background: url('../img/carousel_btn.jpg') repeat-x 0 0;
-}
-
-.carousel.fullscreen .slick-dots {
-	position: absolute;
-	bottom: 10px;
-	left: 50%;
-	margin-left: -45px;
-    list-style: none;
-    text-align: center;
-    display: block;
-}
-
-.carousel.fullscreen .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-}
-
-.carousel.fullscreen .slick-dots li button {
-    font-size: 0;
-    width: 14px;
-    height: 14px;
-    padding: 0px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    background-image: url('../img/dot.png');
-    background-color: transparent;
-    background-position: 0px 0px;
-}
-
-.carousel.fullscreen .slick-dots li.slick-active button, 
-.carousel.fullscreen .slick-dots li button:hover,
-.carousel.fullscreen .slick-dots li button:focus {
-    background-position: 14px 0;
-}
-
 .carousel .item {
 	margin: 0px 15px;
 }
@@ -130,7 +23,6 @@
     outline: medium none;
     padding: 0;
     position: absolute;
-    top: 50%;
     z-index: 1000;
 }
 
