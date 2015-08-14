@@ -43,17 +43,33 @@
 .carousel button.slick-arrow::before {
 	content: '';
 }
-.carousel button.slick-prev::before {
-	content: '<';
-}
 .carousel button.slick-prev {
 	left: 0px;
 }
 .carousel button.slick-next {
 	right: 0px;
 }
-.carousel button.slick-next::before {
-	content: '>';
+
+.carousel button.slick-next::before{
+    background-image: url("../img/arrow_next.png");
+    background-repeat: no-repeat;
+    content: " ";
+    height: 25px;
+    right: 18px;
+    position: absolute;
+    top: 15px;
+    width: 15px;
+}
+
+.carousel button.slick-prev::before{
+    background-image: url("../img/arrow_previous.png");
+    background-repeat: no-repeat;
+    content: " ";
+    height: 25px;
+    left: 18px;
+    position: absolute;
+    top: 15px;
+    width: 15px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */

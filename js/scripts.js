@@ -34,6 +34,12 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 4000,
+		responsive: [{
+            breakpoint: 500,
+            settings: {
+                arrows: false
+            }
+        }]
 	});
 	
 	$('.carousel.multiple').slick({
@@ -42,9 +48,7 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 4000,
-		//centerMode: true,
-  		//centerPadding: '60px',
-        speed: 500,
+        speed: 600,
         responsive: [{
             breakpoint: 1136,
             settings: {
