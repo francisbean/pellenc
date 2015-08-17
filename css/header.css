@@ -2,7 +2,7 @@
 	position: relative;
 	max-width: 1212px;
 	margin: 0 auto;
-	padding: 0 55px 0 100px;
+	padding: 0 37 0 66px;
 	height: 70px;
 }
 
@@ -12,7 +12,7 @@
 	background: url('../img/logo.jpg') 0 0 no-repeat transparent;
 	position: absolute;
 	top: 0;
-	left: 100px;
+	left: 66px;
 	z-index: 1000;
 }
 
@@ -125,10 +125,26 @@
 		left: 0;
 		padding: 0;
 	}
-	
+
+	#header .menu li:hover > ul,
+	#header .menu li:focus > ul {
+		background: none;
+	    display: inline;
+	    left: 0;
+	    padding: 0px;
+	    position: relative;
+	    top: 0;
+	}
+
 	#header .menu li > ul li {
 		padding: 0;
 		text-align: left;
+	}
+
+	#header .menu li > ul li:hover,
+	#header .menu li > ul li.active {
+		border-width: 0;
+		padding:0;
 	}
 
      #header .menu li > ul li a {

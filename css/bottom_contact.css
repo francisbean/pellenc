@@ -1,10 +1,11 @@
 .bottom_contacts {
-	padding: 0px 0 20px;
 	position: relative;
+	padding: 0 37px 20px 66px;
 }
 
 .bottom_contacts .content {
-	padding: 10px 55px 5px 100px;
+	padding: 10px 0 15px 0;
+	max-width: 1212px;
 }
 
 .bottom_contacts .head {
@@ -85,26 +86,30 @@
 
 .bottom_contacts .arrow {
 	margin: 0 auto;
-	background: url('../img/triangle.png') 0 0 no-repeat;
-	width: 89px;
-	height: 45px;
+	background: url('../img/triangle.png') 0 -1px no-repeat;
+	width: 59px;
+	height: 20px;
 	position: relative;
+	left: -20px;
 }
 
 .bottom_contacts .mailIcon {
 	margin-right: 10px; 
 	position: relative; 
-	top: 4px;
+	top: 2px;
 }
 
 .bottom_contacts .phoneIcon {
 	margin-right: 10px; 
 	position: relative; 
-	top: 10px;
+	top: 5px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media all and (max-width: 1110px) {
+	.bottom_contacts .content {
+		padding: 10px 0 5px 0;
+	}
 
 	.bottom_contacts .head p {
 		font-size: 15pt;
@@ -140,6 +145,10 @@
 	    border-width: 0 0 1px;
 	    width: 100%;
 	    padding: 35px 0;
+	}
+
+	.bottom_contacts .arrow {
+		left: 0px;
 	}
 
 	.bottom_contacts .body:last-child {
