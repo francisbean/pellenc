@@ -28,6 +28,7 @@
 	padding: 0 0 5px 0;
 	margin: 30px 0 0 63px;;
 	float: left;
+	position: relative;
 }
 
 #header .menu li a,
@@ -54,6 +55,37 @@
 	border-style: solid;
 }
 
+#header .menu li > ul {
+	display: none;
+}
+
+#header .menu li > ul li {
+	margin: 0;
+	float: none;
+	background-color: #fff;
+	padding: 12px 48px;
+	text-align: center;
+}
+
+#header .menu li:hover > ul,
+#header .menu li:focus > ul {
+	background: url("../img/triangle_menu.png") no-repeat scroll 50% 25px transparent;
+    display: inline;
+    left: -4em;
+    padding: 30px 0px;
+    position: absolute;
+    top: 1em;
+    z-index: 20000;
+}
+
+#header .menu li > ul li:hover,
+#header .menu li > ul li.active {
+	border-width: 0 0 3px;
+	border-color: #F68F36;
+	border-style: solid;
+	padding: 12px 48px 9px;
+}
+
 @media all and (min-width: 861px) {
 	#header .menu {
 		display: block !important;
@@ -75,13 +107,35 @@
 		display: none;
 	}
 
-     #header .menu ul li {
+     #header .menu li {
      	display: block;
 	    margin: 0;
 	    padding: 0;
-	    text-align: center;
+	    text-align: left;
+	    background-color: none;
 	    width: 100%;
 	    float: none;
+     }
+
+     #header .menu li > ul {
+		display: block;
+		background: none;
+		position: relative;
+		top: 0;
+		left: 0;
+		padding: 0;
+	}
+	
+	#header .menu li > ul li {
+		padding: 0;
+		text-align: left;
+	}
+
+     #header .menu li > ul li a {
+     	padding: 0.8em 1em 0.8em 62px;
+     }
+     #header .menu li > ul li a::before{
+     	content: '- ';
      }
 
     #header .menu li:hover,
@@ -92,17 +146,24 @@
      #header .menu li a {
      	background: #F68F36 none repeat scroll 0 0;
 	    border-bottom: 1px solid white;
-	    color: white;
 	    float: none;
 	    display: block;
-	    font-size: 125%;
+	    font-size: 90%;
 	    font-weight: 400;
 	    letter-spacing: 2px;
-	    padding: 0.5em 1em;
+	    padding: 0.8em 1em 0.8em 42px;
 	    text-decoration: none;
 	    text-transform: uppercase;
 	    width: 100%;
      }
+
+    #header .menu li a,
+	#header .menu li a.active,
+	#header .menu li a:hover,
+	#header .menu li a:focus,
+	#header .menu li a:visited {
+		color: #fff;
+	}
 
 	#header #logo_wrap {
 		position: relative;

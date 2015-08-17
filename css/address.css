@@ -12,7 +12,7 @@
 
 #address .column_3 {
 	padding-right: 10px;
-	box-sizing: padding-box;
+	box-sizing: border-box;
 } 
 #address .column_3:last-child {
 	padding-right: 0;
