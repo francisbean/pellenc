@@ -72,115 +72,19 @@
     width: 15px;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media all and (max-width: 860px) {
-	 .carousel {
-	 	margin: 10px auto;
-	 }
-}
-
 .content {
 	padding: 60px 0 55px;
-}
-
-.article.first .content {
-	padding-top: 0px;
-}
-
-h1.page_title {
-  font-size: 48px;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1.2;
-  text-align: center;
-  margin: 70px 10px 66px;
-}
-
-.article h2 {
-  font-size: 30px;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1.2;
-}
-
-.article h3 {
-  font-size: 24px;
-  font-weight: normal;
-  font-style: italic;
-  line-height: 1.2;
-  margin-bottom: 50px;
-}
-
-.article.bottom_title .content{
-	padding: 0px 0 40px;
-}
-
-.article.bottom_title h3 {
-	text-align: center;
-	font-size: 24px;
-	color: #000;
-	font-weight: bold;
-	font-style: italic;
-	text-decoration: none;
-	line-height: 1.2;
-	margin: 60px 10px 30px;
-}
-
-.article li {
-	list-style: initial;
-}
-
-.article.center h2,
-.article.center h3 ,
-.article.center p{
-	text-align: center;
-}
-
-.article.center ul{
-	text-align: center;
-	font-size: 110%;
-}
-
-.article.center ul li {
-	line-height: 2.2em;
-}
-
-.article.upper ul li {
-	text-transform: uppercase;
-}
-
-.article ul.left {
-	padding-left: 1em;
-}
-
-.article ul.left li {
-	padding-left: 1em;
-	line-height: 1.9em;
-}
-
-.article .content {
-	max-width: 1168;
-	padding-right:44px;
-	margin: 0 auto;
 }
 
 #about_us canvas {
 	padding: 0 auto;
 }
 
-
-
-
-
 #bg_map {
 	background: url('../img/map.png') no-repeat;
 	background-position: right 35px;
 	min-height: 256px;
 }
-
-
-
-
 
 /* CARRIER */
 .custom_content h2 {
@@ -303,4 +207,37 @@ h1.page_title {
 .product_item li {
 	line-height: 1.4em;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 960px) {
+	#bg_map {
+	 	background-size: 50% auto;
+		background-position: right;
+	}
+}
+@media all and (max-width: 860px) {
+	 .carousel {
+	 	margin: 10px auto;
+	 }
+}
+
+@media all and (max-width: 690px) {
+	#bg_map {
+	 	background-size: 70% auto;
+		background-position: 50% 10px;
+		padding-top: 50%;
+	}
+
+	#bg_map h2,
+	#bg_map p,
+	#bg_map ul {
+		text-align: center;
+		float: none;
+	}
+	#bg_map .column_2 {
+		width: 100%;
+	}
+}
+
+
 

@@ -1,30 +1,3 @@
-var barChartData = {
-	labels : [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015],
-	datasets : [
-		{
-			fillColor : "#f88f26",
-			strokeColor : "#f88f26",
-			data : [30000, 31000, 32000, 40000, 50000, 55000, 70000, 60000, 72000, 80000, 90000, 120000, 140000, 150000, 240000]
-		}
-	]
-};
-
-/*window.onload = function(){
-	var elm = document.getElementById("chart_1");
-	var ctx = elm.getContext("2d");
-	window.myBar = new Chart(ctx).Bar(barChartData, {
-		responsive : true
-	});
-}
-
-$(function() {
-    $('.banner').unslider({
-		fluid: true,
-		dots: true,
-		speed: 500
-	});
-});*/
-
 $(document).ready(function(){
 	$('.carousel.fullscreen').slick({
 		dots: true,
@@ -82,4 +55,114 @@ $(document).ready(function(){
 		}
 	});
 });
+
+function drawPHChart() {
+	var elm = document.getElementById('chart_div');
+	var styles = window.getComputedStyle(elm.parentNode);
+	var width = parseInt(styles.width.replace('px', ''));
+	console.log('width', width);
+
+	data = new google.visualization.DataTable();
+	data.addColumn('string', 'rok');
+	data.addColumn('number', 'hodín/rok');
+	data.addRows([
+			['2001', 30000],
+			['2003', 59000],
+			['2005', 64000],
+			['2007', 89000],
+			['2009', 136000],
+			['2011', 173000],
+			['2013', 187000],
+			['2015', 240000],
+		]);
+	var options = {
+		colors: ['#f68f36'] ,
+		width: width * 0.8,
+		orientation: orientation,
+		vAxis: {
+		    /*gridlines: {
+		        color: 'transparent'
+		    },
+		    textPosition: 'none',*/
+		    ticks: [{v: 30000, f: '30 000 hodín/rok'}, {v: 240000, f: '240 000 hodín/rok'}]
+		},
+		legend: {position: 'none'},
+	};
+	if(width < 500) {
+		var orientation = 'vertical';
+		var options = {
+			colors: ['#f68f36'] ,
+			width: width,
+			orientation: orientation,
+			vAxis: {
+			    /*gridlines: {
+			        color: 'transparent'
+			    },
+			    textPosition: 'none',*/
+			    ticks: [{v: 30000, f: '30 000 hodín/rok'}, {v: 240000, f: '240 000 hodín/rok'}]
+			},
+			legend: {position: 'none'},
+		};
+	} else {
+		var orientation = 'horizontal';
+	}
+	chart = new google.visualization.ColumnChart(elm);
+	chart.draw(data, options);
+}
+
+function drawECChart() {
+	var elm = document.getElementById('chart_div2');
+	var styles = window.getComputedStyle(elm.parentNode);
+	var width = parseInt(styles.width.replace('px', ''));
+	console.log('width', width);
+
+	data = new google.visualization.DataTable();
+	data.addColumn('string', 'rok');
+	data.addColumn('number', 'hodín/rok');
+	data.addRows([
+			['2001', 26],
+			['2003', 49],
+			['2005', 89],
+			['2007', 140],
+			['2009', 161],
+			['2011', 178],
+			['2013', 192],
+			['2015', 326]
+		]);
+	var options = {
+		colors: ['#f68f36'] ,
+		width: width * 0.8,
+		orientation: orientation,
+		vAxis: {
+		    /*gridlines: {
+		        color: 'transparent'
+		    },
+		    textPosition: 'none',*/
+		    ticks: [{v: 26, f: '26 zamestnancov'}, {v: 326, f: '326 zamestnancov'}]
+		},
+		legend: {position: 'none'},
+	};
+	if(width < 500) {
+		var orientation = 'vertical';
+		var options = {
+			colors: ['#f68f36'] ,
+			width: width,
+			orientation: orientation,
+			vAxis: {
+			    /*gridlines: {
+			        color: 'transparent'
+			    },
+			    textPosition: 'none',*/
+			    ticks: [{v: 30000, f: '30 000 hodín/rok'}, {v: 240000, f: '240 000 hodín/rok'}]
+			},
+			legend: {position: 'none'},
+		};
+	} else {
+		var orientation = 'horizontal';
+	}
+	chart = new google.visualization.ColumnChart(elm);
+	chart.draw(data, options);
+}
+
+
 

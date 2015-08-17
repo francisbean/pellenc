@@ -1,0 +1,162 @@
+.bottom_contacts {
+	padding: 0px 0 20px;
+	position: relative;
+}
+
+.bottom_contacts .content {
+	padding: 10px 55px 5px 100px;
+}
+
+.bottom_contacts .head {
+	margin-bottom: 30px;
+}
+
+.bottom_contacts .head p{
+	font-size: 22pt;
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	width: 25%;
+}
+
+.bottom_contacts .head img {
+	position: relative;
+	left: 20%;
+}
+
+.bottom_contacts p {
+	margin: 0;
+	padding: 0;
+	float: left;
+	box-sizing: border-box;
+}
+
+.bottom_contacts .head p:first-child {
+	text-align: left;
+	padding: 0;
+}
+
+.bottom_contacts .head p {
+    width: 25%;
+}
+
+.bottom_contacts .head p:nth-child(4){
+    text-align: center;
+}
+
+.bottom_contacts .body p {
+    width: 25%;
+}
+.bottom_contacts .body p:nth-child(4){
+    text-align: right;
+}
+
+.bottom_contacts .head p:last-child {
+	text-align: right;
+	padding-left: 0px;
+	padding-right: 50px;
+}
+
+.bottom_contacts .body p {
+	height: 50px;
+	border-width: 0 0 1px 0;
+	border-color: #cecece;
+	border-style: solid;
+	vertical-align: middle;
+	font-size: 16px;
+	color: black;
+  	line-height: 4.2;
+  	text-align: left;
+  	width: 25%;
+} 
+
+.bottom_contacts .body:last-child p {
+	border-bottom: 0px;
+}
+
+.bottom_contacts .body p:first-child {
+	font-weight: bold;
+}
+
+.bottom_contacts .body p:last-child {
+	text-align: right;
+}
+
+.bottom_contacts .arrow {
+	margin: 0 auto;
+	background: url('../img/triangle.png') 0 0 no-repeat;
+	width: 89px;
+	height: 45px;
+	position: relative;
+}
+
+.bottom_contacts .mailIcon {
+	margin-right: 10px; 
+	position: relative; 
+	top: 4px;
+}
+
+.bottom_contacts .phoneIcon {
+	margin-right: 10px; 
+	position: relative; 
+	top: 10px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 1110px) {
+
+	.bottom_contacts .head p {
+		font-size: 15pt;
+	}
+
+	.bottom_contacts .body p {
+		font-size: 9pt;
+		height: auto;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 800px) {
+	.bottom_contacts {
+	    padding: 0px 10px 0px;
+	}
+
+	.bottom_contacts .content {
+		padding: 0;
+	}
+
+	.bottom_contacts .head p,
+	.bottom_contacts .body p {
+		float: none;
+		border: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.bottom_contacts .body {
+		border-color: #cecece;
+	    border-style: solid;
+	    border-width: 0 0 1px;
+	    width: 100%;
+	    padding: 35px 0;
+	}
+
+	.bottom_contacts .body:last-child {
+		border: none;
+	}
+
+	.bottom_contacts .body p {
+		font-size: 9pt;
+		height: auto;
+		line-height: 2em;
+	}
+
+	.bottom_contacts .body p:nth-child(4){
+	    text-align: center;
+	}
+
+	.bottom_contacts img {
+		display: none;
+	}
+}

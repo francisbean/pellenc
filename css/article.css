@@ -1,0 +1,130 @@
+h1.page_title {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+  margin: 70px 55px 50px 100px;
+}
+
+.article h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.article h3 {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.article a,
+.article a:hover,
+.article a:focus {
+	color: #636363;
+}
+
+.article.bottom_title .content{
+	padding: 60px 10px 45px;
+}
+
+.article.bottom_title h3 {
+	text-align: center;
+	font-size: 24px;
+	color: #000;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: none;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.article li {
+	list-style: initial;
+	list-style-position: inside;
+}
+
+.article.center h2,
+.article.center h3 ,
+.article.center p{
+	text-align: center;
+}
+
+.article.center ul{
+	text-align: center;
+	font-size: 110%;
+}
+
+.article.center ul li {
+	line-height: 2em;
+}
+
+.article.upper ul li {
+	text-transform: uppercase;
+}
+
+.article ul.left {
+	padding-left: 1em;
+}
+
+.article ul.left li {
+	padding-left: 1em;
+	line-height: 1.9em;
+}
+
+.article .content {
+	max-width: 1168;
+	padding: 60px 55px 55px 100px;
+	margin: 0 auto;
+}
+
+.article.first .content {
+	padding-top: 0px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 780px) {
+	h1.page_title {
+		font-size: 135%;
+		margin: 30px 10px 10px;
+	}
+
+	.article .content {
+		max-width: 100%;
+		padding: 45px 14px 35px 22px;
+	}
+
+	.article h2 {
+		font-size: 120%
+	}
+
+	.article h3 {
+		font-size: 110%;
+		margin: 0px 10px 30px;
+	}
+
+	.article p {
+		font-size: 77%;
+	}
+
+	.article.center ul{
+		padding-left: 1px;
+	}
+
+	.article li {
+		font-size: 70%;
+	}
+
+	.article.bottom_title h3 {
+		font-size: 110%;
+	}
+
+	.article.bottom_title .content{
+		padding: 30px 10px 25px;
+	}
+
+}

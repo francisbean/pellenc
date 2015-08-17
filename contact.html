@@ -1,101 +1,122 @@
 <!DOCTYPE>
 <html>
 <head>
+	<title>Pellenc s.r.o.</title>
 	<script type="text/javascript" src="//use.typekit.net/ozr5bjk.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script src="js/ChartJS/Chart.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="js/responsive-nav/responsive-nav.js"></script>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/colors.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/article.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/contacts.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/address.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/small_carousel.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/full_carousel.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/bottom_contact.css" media="all" />
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta content="width=device-width" name="viewport">
 </head>
 <body>
 	<div id='header' class='bg_white'>
-		<div id='logo'></div>
 		<div class='menu'>
 			<ul>
-				<li><a class="color_grey" href='index.html'>profil spolocnosti</a></li>
-				<li><a class="color_grey" href='production.html'>vyroba</a></li>
-				<li><a class="color_grey" href='cooperation.html'>kooperacia</a></li>
-				<li><a class="color_grey" href='carrier.html'>kariera</a></li>
+				<li><a class="color_grey" href='index.html'>profil spoločnosti</a></li>
+				<li><a class="color_grey" href='production.html'>výroba</a></li>
+				<li><a class="color_grey" href='cooperation.html'>kooperácia</a></li>
+				<li><a class="color_grey" href='carrier.html'>kariéra</a></li>
 				<li class="active"><a class="color_grey" href='contact.html'>kontakt</a></li>
 			</ul>
 		</div>
+		<div id="logo_wrap">
+			<div id='logo'></div>
+			<div id="menu_toggler">menu</div>
+		</div>
+		<div class="clear"></div>
 	</div>
 
 	<div class="carousel fullscreen">
-		<div style="background-image: url('img/img1.jpg');">
+		<div class="content_wrap">
+			<div class="bg">
+				<img src="img/img1.jpg" alt=""/>
+			</div>
 			<div class="content">
-				<h1>Ttiulka pre prvy slide</h1>
-				<p>No fancy effects or unnecessary markup, and it’s less than 3kb.
+				<h1>Titulka pre prvy slide</h1>
+				<p class="text">No fancy effects or unnecessary markup, and it’s less than 3kb.
+					No fancy effects or unnecessary markup, and it’s less than 3kb.No fancy effects 
+					or unnecessary markup, and it’s less than 3kb. No fancy effects or unnecessary markup, and it’s less than 3kb.
 					No fancy effects or unnecessary markup, and it’s less than 3kb.No fancy effects 
 					or unnecessary markup, and it’s less than 3kb.</p>
-				<a href="#download" class="btn">Download</a>
+				<p class="btn">
+					<a href="#download">Download</a>
+				</p>
 			</div>
 		</div>
-		<div style="background-image: url('img/img2.jpg');">
-			<div class="content">
-				<h1>Ttiulka pre druhy slide</h1>
-				<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
-				<a href="#download" class="btn">Download</a>
+		<div class="content_wrap">
+			<div class="bg">
+				<img src="img/img2.jpg" alt=""/>
 			</div>
-		</div>
-		<div style="background-image: url('img/img3.jpg');">
 			<div class="content">
-				<h1>Ttiulka pre treti slide</h1>
-				<p>Everything to do with Unslider is hosted on GitHub. Everything to do with Unslider is hosted on GitHub.</p>
-				<a href="//github.com/idiot/unslider" class="btn">Contribute</a>
-			</div>
-		</div>
-		<div style="background-image: url('img/img2.jpg');">
-			<div class="content">
-				<h1>Ttiulka pre treti slide</h1>
-				<p>Everything to do with Unslider is hosted on GitHub.</p>
-				<a href="//github.com/idiot/unslider" class="btn">Contribute</a>
+				<h1>Titulka pre prvy slide</h1>
+				<p class="text">No fancy effects or unnecessary markup, and it’s less than 3kb.
+					No fancy effects or unnecessary markup, and it’s less than 3kb.No fancy effects 
+					or unnecessary markup, and it’s less than 3kb.</p>
+				<p class="btn">
+					<a href="#download">Download</a>
+				</p>
 			</div>
 		</div>
 	</div>
-	<h1  class="page_title">Kontakty</h1>
+	<h1  class="page_title">Kontakt</h1>
 	<div class="article bg_grey_light" id="contacts">
-		<div class="content first">
-			<table style="width:100%;">
-				<tr>
-					<th>Kontakty</th>
-					<th><img src="img/head_icon.png"></th>
-					<th><img src="img/letter_icon.png"></th>
-					<th><img src="img/phone_icon.png"></th>
-				</tr>
-				<tr>
-					<td>Sekretariát GR</td>
-					<td>Mária CINGÁLKOVÁ</td>
-					<td>cingalkova@pellenc.sk</td>
-					<td>00421 32 7406 211</td>
-				</tr>
-				<tr>
-					<td>Nákup</td>
-					<td>Peter HANZEL</td>
-					<td>hanzel@pellenc.sk</td>
-					<td>00421 32 7406 250</td>
-				</tr>
-				<tr>
-					<td>Kooperácie</td>
-					<td>Branislav ŠEVČÍK</td>
-					<td>branislav.sevcik@pellenc.sk</td>
-					<td>00421 32 7406 258</td>
-				</tr>
-				<tr>
-					<td>Personalistika</td>
-					<td>Katarína HALUŠKOVÁ</td>
-					<td>katarina.haluskova@pellenc.sk</td>
-					<td>00421 32 7406 213</td>
-				</tr>
-				<tr>
-					<td>Predaj</td>
-					<td>Zoltán SZOMBATH</td>
-					<td>szombath@pellenc.sk</td>
-					<td>00421 910 935 050</td>
-				</tr>
-			</table>
+		<div class="content">
+			<div class="head">
+				<p>&nbsp;</p>
+				<p><img src="img/head_icon.png"></p>
+				<p><img src="img/letter_icon.png"></p>
+				<p><img src="img/phone_icon.png"></p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Sekretariát GR</p>
+				<p>Mária Cingálková</p>
+				<p>cingalkova@pellenc.sk</p>
+				<p>00421 32 7406 211</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Nákup</p>
+				<p>Peter Hanzel</p>
+				<p>hanzel@pellenc.sk</p>
+				<p>00421 32 7406 250</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Kooperácie</p>
+				<p>Branislav Ševčík</p>
+				<p>branislav.sevcik@pellenc.sk</p>
+				<p>00421 32 7406 258</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Personalistika</p>
+				<p>Katarína Halušková</p>
+				<p>katarina.haluskova@pellenc.sk</p>
+				<p>00421 32 7406 213</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Predaj</p>
+				<p>Zoltán Szombath</p>
+				<p>szombath@pellenc.sk</p>
+				<p>00421 910 935 050</p>
+				<div class="clear"></div>
+			</div>
 		</div>
 	</div>
 	<!--<div class="article" id="googleMap">
@@ -131,11 +152,11 @@
 			<div id="logo"></div>
 			<div class='menu'>
 				<ul>
-					<li class="active"><a class="color_grey" href='index.html'>profil spolocnosti</a></li>
-					<li><a class="color_grey" href='production.html'>vyroba</a></li>
-					<li><a class="color_grey" href='cooperation.html'>kooperacia</a></li>
-					<li><a class="color_grey" href='carrier.html'>kariera</a></li>
-					<li><a class="color_grey" href='contact.html'>kontakt</a></li>
+					<li><a class="color_grey" href='index.html'>profil spoločnosti</a></li>
+					<li><a class="color_grey" href='production.html'>výroba</a></li>
+					<li><a class="color_grey" href='cooperation.html'>kooperácia</a></li>
+					<li><a class="color_grey" href='carrier.html'>kariéra</a></li>
+					<li  class="active"><a class="color_grey" href='contact.html'>kontakt</a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>

@@ -1,74 +1,91 @@
 <!DOCTYPE>
 <html>
 <head>
+	<title>Pellenc s.r.o.</title>
 	<script type="text/javascript" src="//use.typekit.net/ozr5bjk.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script src="js/ChartJS/Chart.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="js/responsive-nav/responsive-nav.js"></script>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/colors.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/article.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/contacts.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/address.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/small_carousel.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/full_carousel.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/bottom_contact.css" media="all" />
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta content="width=device-width" name="viewport">
 </head>
 <body>
 	<div id='header' class='bg_white'>
-		<div id='logo'></div>
 		<div class='menu'>
 			<ul>
-				<li><a class="color_grey" href='index.html'>profil spolocnosti</a></li>
-				<li><a class="color_grey" href='production.html'>vyroba</a></li>
-				<li class="active"><a class="color_grey" href='cooperation.html'>kooperacia</a></li>
-				<li><a class="color_grey" href='carrier.html'>kariera</a></li>
+				<li><a class="color_grey" href='index.html'>profil spoločnosti</a></li>
+				<li><a class="color_grey" href='production.html'>výroba</a></li>
+				<li class="active"><a class="color_grey" href='cooperation.html'>kooperácia</a></li>
+				<li><a class="color_grey" href='carrier.html'>kariéra</a></li>
 				<li><a class="color_grey" href='contact.html'>kontakt</a></li>
 			</ul>
 		</div>
+		<div id="logo_wrap">
+			<div id='logo'></div>
+			<div id="menu_toggler">menu</div>
+		</div>
+		<div class="clear"></div>
 	</div>
+
 	<div class="carousel fullscreen">
-		<div style="background-image: url('img/img1.jpg');">
+		<div class="content_wrap">
+			<div class="bg">
+				<img src="img/img1.jpg" alt=""/>
+			</div>
 			<div class="content">
-				<h1>Ttiulka pre prvy slide</h1>
-				<p>No fancy effects or unnecessary markup, and it’s less than 3kb.
+				<h1>Titulka pre prvy slide</h1>
+				<p class="text">No fancy effects or unnecessary markup, and it’s less than 3kb.
+					No fancy effects or unnecessary markup, and it’s less than 3kb.No fancy effects 
+					or unnecessary markup, and it’s less than 3kb. No fancy effects or unnecessary markup, and it’s less than 3kb.
 					No fancy effects or unnecessary markup, and it’s less than 3kb.No fancy effects 
 					or unnecessary markup, and it’s less than 3kb.</p>
-				<a href="#download" class="btn">Download</a>
+				<p class="btn">
+					<a href="#download">Download</a>
+				</p>
 			</div>
 		</div>
-		
-		<div style="background-image: url('img/img2.jpg');">
-			<div class="content">
-				<h1>Ttiulka pre druhy slide</h1>
-				<p>Use any HTML in your slides, extend with CSS. You have full control.</p>
-				<a href="#download" class="btn">Download</a>
+		<div class="content_wrap">
+			<div class="bg">
+				<img src="img/img2.jpg" alt=""/>
 			</div>
-		</div>
-		<div style="background-image: url('img/img3.jpg');">
 			<div class="content">
-				<h1>Ttiulka pre treti slide</h1>
-				<p>Everything to do with Unslider is hosted on GitHub. Everything to do with Unslider is hosted on GitHub.</p>
-				<a href="//github.com/idiot/unslider" class="btn">Contribute</a>
-			</div>
-		</div>
-		<div style="background-image: url('img/img2.jpg');">
-			<div class="content">
-				<h1>Ttiulka pre treti slide</h1>
-				<p>Everything to do with Unslider is hosted on GitHub.</p>
-				<a href="//github.com/idiot/unslider" class="btn">Contribute</a>
+				<h1>Titulka pre prvy slide</h1>
+				<p class="text">No fancy effects or unnecessary markup, and it’s less than 3kb.
+					No fancy effects or unnecessary markup, and it’s less than 3kb.No fancy effects 
+					or unnecessary markup, and it’s less than 3kb.</p>
+				<p class="btn">
+					<a href="#download">Download</a>
+				</p>
 			</div>
 		</div>
 	</div>
-	<h1 class="page_title">Kooperacia</h1>
+	<h1 class="page_title">Kooperácia</h1>
 	<div class="article first center upper">
 		<div class="content">
-			<h3>Naša spoločnosť aktívne hľadá dodávateľov na kooperácie:</h3>
+			<h3>Naša spoločnosť aktívne hľadá dodávateľov na kooperácie:</h3>
 			<ul>
 				<li>výroba kovoobrábaných dielcov</li>
 				<li>povrchové úpravy kovov galvanickým pokovovaním</li>
 				<li>povrchové úpravy špeciálne (oteruvzdorné povlaky)</li>
-				<li>tepelné spracovani</li>
+				<li>tepelné spracovanie</li>
 				<li>výroba zváraných konštrukcií</li>
 				<li>lakovanie oceľových konštrukcií</li>
-				<li>oceľové odliatky a odliatky z ľahkých kovov</li>
+				<li>oceľové odliatky a odliatky z ľahkých kovov</li>
 				<li>plastové dielce vyrábané  vákuovým lisovaním, rotačným liatím</li>
-				<li>laminátové pohľadové dielce s konečnou farebnou povrchovou úpravou</li>
+				<li>laminátové pohľadové dielce s konečnou farebnou povrchovou úpravou</li>
 			</ul>
 		</div>
 	</div>
@@ -83,30 +100,19 @@
 	</div>
 	<div class="article bottom_title">
 		<div class="content">
-			<h3 class="bottom_title">Pokud máte záujom o spoluprácu, kontaktujte nás</h3>
+			<h3 class="bottom_title">Ak máte záujem o spoluprácu, kontaktujte nás</h3>
 		</div>
 	</div>
-	<div class="article bg_orange bottom_contacts col_3">
+	<div class="article bg_orange bottom_contacts">
 		<div class="arrow"></div>
 		<div class="content">
-			<table style="width:100%;">
-				<tr>
-					<td></td>
-					<td>
-						<img style="margin-top: 18px;" src="img/letter_icon.png">
-						<div style="padding-left: 50px; display: inline;">info@pellenc.sk</div>
-					</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td style="padding-left: 8px;">
-						<img style="margin-top: 10px;" src="img/phone_icon.png">
-						<div style="padding-left: 50px;  display: inline;">00421 32 7406 213</div>
-					</td>
-					<td></td>
-				</tr>
-			</table>
+			<div class="body">
+				<p>&nbsp;</p>
+				<p><img class="mailIcon" src="img/letter_icon.png"/>cingalkova@pellenc.sk</p>
+				<p><img class="phoneIcon" src="img/phone_icon.png">00421 32 7406 211</p>
+				<p>&nbsp;</p>
+				<div class="clear"></div>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
@@ -114,10 +120,10 @@
 			<div id="logo"></div>
 			<div class='menu'>
 				<ul>
-					<li><a class="color_grey" href='index.html'>profil spolocnosti</a></li>
-					<li><a class="color_grey" href='production.html'>vyroba</a></li>
-					<li class="active"><a class="color_grey" href='cooperation.html'>kooperacia</a></li>
-					<li><a class="color_grey" href='carrier.html'>kariera</a></li>
+					<li><a class="color_grey" href='index.html'>profil spoločnosti</a></li>
+					<li><a class="color_grey" href='production.html'>výroba</a></li>
+					<li class="active"><a class="color_grey" href='cooperation.html'>kooperácia</a></li>
+					<li><a class="color_grey" href='carrier.html'>kariéra</a></li>
 					<li><a class="color_grey" href='contact.html'>kontakt</a></li>
 				</ul>
 			</div>
@@ -130,6 +136,7 @@
 			<p class="right">Design by <a href="http://youngprimitive.cz">youngprimitive.cz</a> | Code by <a href="kiristinakralikova.cz">Kika</a></p>
 		</div>
 	</div>
+
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 	<script src="js/scripts.js"></script>

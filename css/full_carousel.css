@@ -2,6 +2,7 @@
 	height: 470px;
 	position: relative;
 	background-color: grey;
+    margin: 0 auto;
 }
 
 .carousel.fullscreen .content_wrap {
@@ -125,7 +126,7 @@
     }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 780px) {
     .carousel.fullscreen {
         height: 300px;
     }
