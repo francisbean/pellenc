@@ -203,7 +203,12 @@
 .article .product_item h2 {
 	font-size: 120%;
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom: 3px;
+	margin-top: 30px;
+}
+
+.article .product_item p {
+	margin: 0;
 }
 
 .article .product_item li {
