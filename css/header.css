@@ -170,7 +170,7 @@
 	    padding: 0.8em 1em 0.8em 42px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    width: 100%;
+	    /*width: 100%;*/
      }
 
     #header .menu li a,
