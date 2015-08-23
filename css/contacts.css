@@ -22,7 +22,7 @@
 
 #contacts .head img {
 	position: relative;
-	left: 20%;
+	left: 2em;
 }
 
 #contacts p {
@@ -43,7 +43,12 @@
 }
 
 #contacts .head p:nth-child(4){
-    text-align: center;
+    text-align: right;
+}
+
+#contacts .head p:nth-child(4) img{
+    right: 2.5em;
+    left: auto;
 }
 
 #contacts .body p {

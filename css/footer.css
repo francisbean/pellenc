@@ -31,8 +31,9 @@
 
 #footer .menu li {
 	padding: 0 0 5px 0;
-	margin: 58px 0 0 63px;;
+	margin: 58px 0 0 63px;
 	float: left;
+	position: relative;
 }
 
 #footer .menu li:hover,
@@ -56,6 +57,29 @@
 #footer .menu li:hover > a,
 #footer .menu li.active > a {
 	color: #000;
+}
+
+#footer .menu li > ul {
+	display: none;
+	position: absolute;
+	left: -4em;
+    padding: 0px 0px 75px;
+    bottom: 1em;
+    z-index: 20000;
+    background: url("../img/triangle_menu_bottom.png") no-repeat scroll 50% 5em transparent;
+}
+
+#footer .menu li > ul li {
+	margin: 0;
+	float: none;
+	background-color: #aaa;
+	padding: 12px 48px;
+	text-align: center;
+}	
+
+#footer .menu li:hover > ul,
+#footer .menu li:focus > ul {
+    display: inline;
 }
 
 #credit {
@@ -116,6 +140,25 @@
 	    padding: 0;
 	    text-align: center;
 	}
+
+	#footer .menu li > ul {
+		display: block;
+		position: relative;
+		left: 0;
+	    bottom: 0;
+	    padding: 0;
+	}
+
+	#footer .menu li > ul li {
+		padding: 0 0 5px 0;
+		margin: 10px 10px 7px;
+		padding: 0px;
+	}
+
+	#footer .menu li > ul li a::before{
+     	content: '- ';
+     }
+
 	#credit {
 		padding: 0 10px;
 		height: 83px;

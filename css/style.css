@@ -219,6 +219,76 @@
 	margin: 0 auto;
 }
 
+.article form.content {
+	padding: 20px 37px 2px 66px;
+	text-align: center;
+}
+
+.article form.content h2 {
+	margin: 6px 10px 28px;
+}
+
+.article form.content p {
+	margin: 0 0 21px;
+}
+
+.article form.content input[type=text] {
+	width: 350px;
+	border: 1px solid black;
+	line-height: 1.8em;
+	padding: 2px 2px 2px 8px;
+	vertical-align: middle;
+}
+
+.article form.content p.btn {
+	margin: 4px 0 21px;
+}
+
+.article form.content .btn {
+	border: none;
+	font-size: 80%;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	padding: 6px 10px;
+    margin: 0 auto;
+    width: auto;
+    display: inline-block;
+	background: url('../img/carousel_btn.jpg') repeat-x 0 0;
+}
+
+.article form.content input[type=submit] {
+	background: url('../img/carousel_btn.jpg') repeat-x 0 0;
+	color: #fff;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.article form.content .btn_arrow{
+    background-image: url("../img/arrow_next.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    height: 1.2em;
+    padding-right: 10px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+/*.carousel.fullscreen .content p.btn {
+	font-size: 80%;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	padding: 7px 13px 7px 28px;
+    margin: 5px 0;
+    display: inline;
+	background: url('../img/carousel_btn.jpg') repeat-x 0 0;
+}
+
+*/
+
 /* Smartphones (portrait and landscape) ----------- */
 @media all and (max-width: 960px) {
 	#bg_map {
