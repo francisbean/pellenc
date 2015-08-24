@@ -38,6 +38,7 @@
 
 .clear {
 	clear: both;
+	height: 0px;
 }
 
 .column_2 {

@@ -1,0 +1,17 @@
+# Turn on rewrites.
+RewriteEngine on
+#RewriteBase /
+ 
+# Don't apply to URLs that go to existing files or folders.
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+ 
+# Only apply to URLs that aren't already under /modx-pellenc.
+#RewriteCond %{REQUEST_URI} !^/modx-pellenc/
+ 
+# Rewrite all those to insert /modx-pellenc.
+#RewriteRule ^(.*)$ /modx-pellenc/$1
+ 
+# Redirect the root folder.
+RewriteCond %{HTTP_HOST} ^(www.)?pellenc.sk$
+RewriteRule ^(/)?$ modx-pellenc/ [R]

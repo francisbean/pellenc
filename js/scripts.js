@@ -19,7 +19,7 @@ $(document).ready(function(){
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 4000,
         speed: 600,
         responsive: [{
