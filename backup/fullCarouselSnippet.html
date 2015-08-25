@@ -1,0 +1,29 @@
+<?php
+// Open a directory, and read its contents
+$source = '../modx-pellenc/imgCarousel/bigCarousel/'.$path;
+$dir_handle = opendir($source) or die('Unable to open' . $source);
+
+$array = array();
+while (($file = readdir($dir_handle)) !== false) {
+   if ($file != '.' && $file != '..') {
+      $pathinfo = pathinfo($file);
+      if (isset($pathinfo['extension'])) { 
+          $ext = strtolower($pathinfo['extension']); 
+      } else { 
+          $ext = ''; 
+      }
+      if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'bmp' || $ext == 'gif') {
+          $array[] = $file;
+      }
+   }
+}
+
+if ($array) {
+   sort($array); // Use rsort for Z-A order
+   $html = '<div class="carousel fullscreen">';
+   foreach ($array as $value) {
+      $html .= '<div class="content_wrap"><div class="bg"><img src="' . $source . $value . '" alt="" /></div></div>';
+   }
+   $html .= '</div>';
+   echo($html);
+}

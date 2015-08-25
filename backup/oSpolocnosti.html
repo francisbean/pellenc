@@ -1,0 +1,116 @@
+<script>
+		function initialize() {
+			var mapCanvas = document.getElementById('googleMap');
+			var myLatLng = {lat: 48.7475, lng: 17.84535};
+
+		    var mapOptions = {
+		      center: myLatLng,
+		      zoom: 16,
+		      mapTypeId: google.maps.MapTypeId.ROADMAP,
+scrollwheel: false
+		    }
+		    var map = new google.maps.Map(mapCanvas, mapOptions);
+		    var image = 'img/mapLogo.jpg';
+
+		    var marker = new google.maps.Marker({
+				position: {lat: 48.7468, lng: 17.84320},
+				map: map,
+				icon: image,
+				title:"Hello World!"
+
+			});
+
+			var contentString = '<div id="content">'+
+				'<p><strong>Pellenc s.r.o.<strong></p>'+
+				'<p>Kočovská 2443/18</p>'+
+				'<p>915 01 Nové Mesto nad Váhom</p>'+
+				'<p>Slovensko</p>'+
+				'<p></p>'+
+				'<p><a href="http://www.pellenc.sk"/>www.pellenc.sk</a></p>'
+			'</div>';
+
+
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
+
+
+			marker.addListener('click', function() {
+				infowindow.open(map, marker);
+			});
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>[[$header]] [[!fullCarousel? &amp;path=/]]
+<h1 class="page_title">Profil spoločnosti</h1>
+
+<div class="article first center upper">
+<div class="content">
+<p>Pellenc s.r.o. (ďalej PSRO) je dcérskou spoločnosťou francúzskej spoločnosti Pellenc SA Francúzsko, ktorá je dlhodobo svetovým lídrom v&nbsp;oblasti výroby strojov pre vinohradníctvo, vinárstvo a&nbsp;pestovanie olív. Hlavnými aktivitami skupiny Pellenc je vývoj, konštrukcia a&nbsp;výroba strojov pre:</p>
+
+<ul>
+	<li>vinohradníctvo</li>
+	<li>pestovanie olív</li>
+	<li>vinárstva</li>
+	<li>sadovníctvo a&nbsp;údržbu zelených priestorov v&nbsp;mestách a&nbsp;iných rezortoch</li>
+	<li>linky na triedenie komunálneho odpadu</li>
+</ul>
+</div>
+</div>
+
+<div class="article bg_orange">
+<div class="content" id="bg_map">
+<h2>Pellenc vo svete</h2>
+
+<div class="column_2">
+<p>Skupina Pellenc má filiálky na všetkých kontinentoch, primárne v&nbsp;krajinách, kde sa pestuje hrozno a&nbsp;olivy:</p>
+
+<ul class="left">
+	<li>Európa - Francúzsko, Španielsko, Portugalsko, Taliansko, Slovensko</li>
+	<li>Afrika - Maroko, Tunis, Grécko, Turecko</li>
+	<li>USA - Kalifornia</li>
+	<li>Austrália a Nový Zéland</li>
+</ul>
+</div>
+
+<div class="clear">&nbsp;</div>
+</div>
+</div>
+
+<div class="article center" id="about_us">
+<div class="content">
+<h2>Rastieme každým rokom</h2>
+
+<p>Pellenc s.r.o. ako samostatný právny subjekt bola založená v&nbsp;r. 1999 a&nbsp;pôsobí v&nbsp;Novom Meste nad Váhom, spočiatku v&nbsp;prenajatých priestoroch objektu Strojstav a&nbsp;od januára 2002 v&nbsp;objekte areálu spoločnosti Prefa.</p>
+
+<ul class="center upper">
+	<li>spoločnosť disponuje cca. 20&nbsp;000 m2 zrekonštruovaných výrobných priestorov</li>
+	<li>spoločnosť zamestnáva 300 zamestnancov</li>
+	<li>spoločnosť neustále investuje do vývoja ako i&nbsp;potrebnej infraštruktúry</li>
+	<li>spoločnosť od svojho vzniku rastie a&nbsp;to i&nbsp;napriek krízovej situácii v&nbsp;európskej ako i&nbsp;svetovej ekonomike</li>
+</ul>
+
+<div style="height: 50px;">&nbsp;</div>
+
+<h2>Výrobne hodiny</h2>
+
+<div align="center" id="chart_div" style="height: 200px; width: 100%; margin: 0 auto;">&nbsp;</div>
+
+<div style="height: 50px;">&nbsp;</div>
+
+<h2>Vývoj počtu zamestnancov</h2>
+
+<div align="center" id="chart_div2" style="height: 200px; width: 100%; margin: 0 auto;">&nbsp;</div>
+</div>
+</div>
+[[$contacts? &amp;title=Kontakty]] [[$footer]] <script>
+		google.load('visualization', '1', {'packages':['corechart']});
+
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.setOnLoadCallback(drawPHChart);
+		google.setOnLoadCallback(drawECChart);
+		$(window).resize(function(){
+			drawPHChart();
+		    drawECChart();
+		});
+	</script>

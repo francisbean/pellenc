@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>[[++site_name]] - [[*pagetitle]]</title>
+        <base href="[[++site_url]]" />
+
+    	<script type="text/javascript" src="//use.typekit.net/ozr5bjk.js"></script>
+    	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    	<script src="js/responsive-nav/responsive-nav.js"></script>
+    	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/colors.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/header.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/footer.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/article.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/contacts.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/address.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/small_carousel.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/full_carousel.css" media="all" />
+    	<link rel="stylesheet" type="text/css" href="css/bottom_contact.css" media="all" />
+    	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    	<meta content="width=device-width" name="viewport">
+</head>
+    <body class="custom_content">
+        [[$header]] 
+        [[!fullCarousel? &amp;path=/]]
+        <h1 class="page_title">Kariéra</h1>
+        <div class="article first center upper">
+            <div class="content">
+                <p>Základom rastu dynamicky sa rozvíjajúcej spoločnosti sú aktivity sústredené do neustáleho zlepšovania personálneho obsadenia jednotlivých pozícií a&nbsp;profesií ako aj ich kvantitatívneho navyšovania, Pellenc s.r.o zamestnáva približne 300 zamestnancov a&nbsp;radí sa medzi významných zamestnávateľov v&nbsp;regióne. Aby spoločnosť zvládla náročnosť a kvalitu výroby a uspokojovala zvyšujúce sa nároky zákazníka venuje nemalú pozornosť pri výbere zamestnancov ich zaškoľovaniu a ďalšiemu odbornému rastu.</p>
+                <h2 style="margin-top: 30px; margin-bottom: 20px;">Koho hľadáme?</h2>
+                
+                <h3>Výrobné robotnícke profesie</h3>
+                
+                <ul>
+                	<li>CNC operátor ohraňovacieho lisu</li>
+                	<li>CNC operátor laserového páliaceho stroja</li>
+                	<li>operátor na deliacich pásových pílach</li>
+                	<li>nástrojár / prototypkár</li>
+                	<li>lakovač</li>
+                	<li>zvárač</li>
+                	<li>montážny zámočník</li>
+                	<li>manipulant / vodič VZV</li>
+                	<li>robotník výroby / expedície</li>
+                </ul>
+                
+                <h3>Riadiace profesie vo výrobe</h3>
+                
+                <ul>
+                	<li>majster výroby</li>
+                	<li>výrobný dispečer</li>
+                </ul>
+            
+                <h3>THP profese</h3>
+                
+                <ul>
+                	<li>konštruktér/technológ</li>
+                	<li>nákupca/zásobovač</li>
+                </ul>
+            </div>
+        </div>
+        <!--<div class="article bg_grey_light center">
+            [[!FormIt? 
+                &hooks='email' 
+                &emailFrom='neodpovedat@pellenc.sk'
+                &emailTpl='carrierEmailTpl'
+                &emailTo= '[[+kika.kralikova@gmail.com]]' 
+                &emailSubject= 'Zivotopis zaslany prostrednictvom webovych stranok'
+                &validate='name:required, email:email:required, phone:required, cv:required'
+            ]]
+            <form action="[[~[[*id]]]]" class="content" method="post">
+                <h2>Chcem pracovať pre Pellenc</h2>
+                [[!+fi.validation_error_message:!empty='
+                
+                <div class="alert alert-error"><button class="close" data-dismiss="alert" type="button">×</button>
+                
+                <h3>Please review the following errors:</h3>
+                
+                <ul>
+                	<li>[[!+fi.error.name:!empty='</li>
+                	<li><a href="[[~[[*id]]]]#name">Meno a priezvisko su povinne polozky</a></li>
+                	<li>']] [[!+fi.error.email:!empty='</li>
+                	<li><a href="[[~[[*id]]]]#email">Email je povinna polozka</a></li>
+                	<li>']] [[!+fi.error.phone:!empty='</li>
+                	<li><a href="[[~[[*id]]]]#comment">Telefonne cislo je povinna polozka</a></li>
+                	<li>']] [[!+fi.error.cv:!empty='</li>
+                	<li><a href="[[~[[*id]]]]#comment">Zivotopis je povinna polozka</a></li>
+                	<li>']]</li>
+                </ul>
+                </div>
+                ']]
+                
+                <p><input name="name" placeholder="Meno a priezvisko" type="text" value="[[!+fi.name]]" /></p>
+                
+                <p><input name="email" placeholder="Váš e-mail" type="text" value="[[!+fi.email]]" /></p>
+                
+                <p><input name="phone" placeholder="Vaše tel. číslo" type="text" value="[[!+fi.phone]]" /></p>
+                
+                <p><input name="cv" placeholder="Životopis" type="text" value="[[!+fi.cv]]" /></p>
+                
+                <p><input name="note" placeholder="Správa pre nás" type="text" value="[[!+fi.note]]" /></p>
+                
+                <p class="btn"><input type="submit" value="Odoslať formulár" /></p>
+                
+                <p style="font-style: italic;">Ďakujeme Vám za odoslanie formulára. Budeme Vás kontaktovať.</p>
+                
+                <p>&nbsp;</p>
+            </form>
+        </div>-->
+        
+        <div class="article bottom_title">
+            <div class="content">
+                <h3>Aktuálne pracovné pozície</h3>
+                [[*content]]
+            </div>
+        </div>
+        
+        <div class="article bg_orange bottom_contacts">
+            <div class="arrow">&nbsp;</div>
+            
+            <div class="content">
+                <div class="body">
+                    <p>Sekretariát GR</p>
+                    
+                    <p>Mária CINGÁLKOVÁ</p>
+                    
+                    <p><img alt="" class="mailIcon" src="img/letter_icon.png" />cingalkova@pellenc.sk</p>
+                    
+                    <p><img alt="" class="phoneIcon" src="img/phone_icon.png" />00421 32 7406 211</p>
+                    
+                    <div class="clear">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        [[$footer]]
+        
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<div class="article bg_grey_light" id="contacts">
+		<div class="content">
+			<div class="head">
+				<p>[[+title]]</p>
+				<p><img src="img/head_icon.png"></p>
+				<p><img src="img/letter_icon.png"></p>
+				<p><img src="img/phone_icon.png"></p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Sekretariát GR</p>
+				<p>Mária Cingálková</p>
+				<p>sekretariat@pellenc.sk</p>
+				<p>00421 32 7406 211</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Nákup</p>
+				<p>Peter Hanzel</p>
+				<p>hanzel@pellenc.sk</p>
+				<p>00421 32 7406 250</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Kooperácie</p>
+				<p>Branislav Ševčík</p>
+				<p>branislav.sevcik@pellenc.sk</p>
+				<p>00421 32 7406 258</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Personalistika</p>
+				<p>pellenc@pellenc.sk</p>
+				<p>pellenc@pellenc.sk</p>
+				<p>00421 32 7406 213</p>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<p>Predaj</p>
+				<p>Zoltán Szombath</p>
+				<p>szombath@pellenc.sk</p>
+				<p>00421 910 935 050</p>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="article">
+		<div id="googleMap" style="with: 100%; height: 300px;"></div>
+	</div>
+	<div class="article" id="address">
+		<div class="content">
+			<h2>Adresa spoločnosti</h2>
+			<div style="margin:12px 0 52px;">
+				<div class="column_3">
+					<p>Kočovská 18</p>
+					<p>91501 Nové Mesto nad Váhom</p>
+					<p>Slovenská Republika</p>
+				</div>
+				<div class="column_3">
+					<p>IČO: 36310212</p>
+					<p>DIČ: 36310212/643</p>
+					<p>Bankové spojenie: 0273306152/0900 SLSP</p>
+				</div>
+				<div class="column_3">
+					<p>48°44'51.9"N 17°50'34.6"E</p>
+					<p>www.pellenc.com  |  pellenc.sa@pellenc.com</p>
+					<p>Tel.: 0033 (0)4 90 09 47 00</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
